@@ -1,6 +1,7 @@
 const draw = (number)=>{
     let flag = 1;
     let string = "";
+    if(number > 0 ){
         for( let i = 1 ; i < number +1 ; i++){
             if(i % 2 === 0){
                 for (let j = 0; j < number; j++) {
@@ -26,8 +27,10 @@ const draw = (number)=>{
                 
             }
         }
-    
-    return string;
+        return string;
+    }else {
+        return "Input harus positive"
+    }
 }
 
-console.log(draw(15))
+console.log(draw(1))
